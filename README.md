@@ -41,7 +41,7 @@ const handlers = {
         console.log(`${component} hovered Do. something`);
       },
       mouseover: function (event, component) {
-      console.log(`${component} hovered. Do something`);
+        console.log(`${component} hovered. Do something`);
       },
     },
   }
