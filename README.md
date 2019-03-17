@@ -26,7 +26,7 @@ For example if you want to track a link being clicked or hovered you can do with
 On the js file define the handlers for each type of event
 
 ```javascript
-let handlers = {
+const handlers = {
   cta: {
     click: { 
       click: function (event, component) {
