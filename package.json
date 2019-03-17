@@ -1,0 +1,17 @@
+{
+  "name": "picoDatalayer",
+  "version": "1.0.0",
+  "description": "miniFramework for datalayer specifics",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "start":"parcel src/index.html -p 3000"
+  },
+  "keywords": ["parcel", "datalayer", "dtm", "ga", "google analytics", "gtm", "google tag manager", "analytics", "picodl"],
+  "author": "Ignacio Garcia Villanueva",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^1.11.0"
+  }
+}
