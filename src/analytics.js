@@ -1,4 +1,4 @@
-let handlers = {
+const handlers = {
   cta: {
     click: { 
       click: function (event, component) {
@@ -19,17 +19,14 @@ let handlers = {
   }
 }
 
-
 const onPageLoad = () => {
-  
   document.querySelectorAll('.dl').forEach(
     node => {
-      
-      let dlEvents = node.dataset.dlEvents;
-      let events = (dlEvents.indexOf(',')>-1) ? dlEvents.split(', ') : dlEvents;
-      
-      let component = node.dataset.dlComponent;
-      events.forEach((eventType)=> {
+      const dlEvents = node.dataset.dlEvents;
+      const events = (dlEvents.indexOf(',') > -1) ? dlEvents.split(', ') : dlEvents;
+      const component = node.dataset.dlComponent;
+
+      events.forEach((eventType) => {
         eventsArray=[];
         switch(eventType) {
           case 'click': 
